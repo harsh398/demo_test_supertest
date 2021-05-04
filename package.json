@@ -1,7 +1,7 @@
 {
   "name": "demo_test",
   "version": "1.0.0",
-  "description": "A boilerplate for getting started with mocha",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/checkpokemon.js  --timeout 100000 --reporter mochawesome",
