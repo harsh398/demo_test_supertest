@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/checkpokemon.js  --timeout 100000 --reporter mochawesome",
-    "fakeApi": "json-server --watch 'json-server/db.json'",
     "report": "marge --inline=true mochawesome-report/mochawesome.json"
   },
   "author": "Harsharan Deep",
