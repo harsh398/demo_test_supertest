@@ -9,9 +9,9 @@ const apiHelper = require('../helper/api_helper.js');
 let baseUrl = apiEndPointHelper.baseUrl;
 let apiEndPoint = apiEndPointHelper.checkPokemon;
 
-describe('Superhero Api Suite', function () {
+describe('Check Pokemon Api Suite', function () {
     describe('GET Request', function () {
-        it('Should Get Superhero', async function () {
+        it('Should Get Pikachu', async function () {
             let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint);
             res = res.body;
             res.should.have.property('name').which.is.a.String('thunder-punch')
