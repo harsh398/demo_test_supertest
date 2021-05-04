@@ -6,7 +6,7 @@ This API test framework written Using Supertest
 Harsharan Deep 
 
 ## Tool and Languages User : - 
-1. SuperTest [Here](https://www.cypress.io/)
+1. SuperTest 
 2. NPM/Nodejs [Here](https://nodejs.org/en/)
 3. Language Used - Javascript 
 
