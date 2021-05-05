@@ -14,11 +14,11 @@ describe('Check Pokemon Api Suite', function () {
         it('Should Get Pikachu', async function () {
             let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint);
             res.status.should.equal(200);
-            res.should.have.property('name').which.is.a.String('thunder-punch')
             console.log("Response Status : " + res.status);
             console.log(res.headers)
             res = res.body;
             console.log(res);
+            res.should.have.property('name').which.is.a.String('thunder-punch')
             let count = Object.keys(res.moves).length;
             console.log("No of Moves : " + count)
             for (let i = 0; i < count; i++) {
