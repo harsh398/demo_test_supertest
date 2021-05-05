@@ -19,7 +19,9 @@ describe('Check Pokemon Api Suite', function () {
             res = res.body;
             console.log(res);
             res.should.have.property('name').which.is.a.String('thunder-punch')
-            for (let i = 0; i < 81; i++) {
+            let count = Object.keys(res.moves).length;
+            console.log("No of Moves : "+count)
+            for (let i = 0; i < count; i++) {
                 let response_body = res.moves[i].move;
                 if (response_body.name == 'thunder-punch') {
                     console.log("Move Name = " + response_body.name + " " + "Pikachu Move is thunder-punch")
