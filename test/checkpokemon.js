@@ -16,6 +16,7 @@ describe('Check Pokemon Api Suite', function () {
             res.status.should.equal(200);
             console.log("Response Status : " +res.status);
             res = res.body;
+            console.log(res);
             res.should.have.property('name').which.is.a.String('thunder-punch')
             for(let i =0 ; i< 81 ;i++){
                let response_body= res.moves[i].move;
