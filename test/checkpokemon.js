@@ -15,6 +15,7 @@ describe('Check Pokemon Api Suite', function () {
             let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint);
             res.status.should.equal(200);
             console.log("Response Status : " +res.status);
+            console.log(res.headers)
             res = res.body;
             console.log(res);
             res.should.have.property('name').which.is.a.String('thunder-punch')
